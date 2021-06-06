@@ -1,4 +1,7 @@
 package Base;
+
+import java.util.Scanner;
+
 /*
 UCF COP3330 Summer 2021 Assignment 1 Solution
 Copyright 2021 Alek Dussuau
@@ -22,10 +25,24 @@ concatenation instead.
 
 Challenge
 Modify this program so that instead of prompting for quotes from the user, you create a structure that holds quotes and
-their associated attributions and then display all of the quotes using the format in the example. An array of maps would be a good choice.
+their associated attributions and then display all of the quotes using the format in the example. An array of maps would
+be a good choice.
  */
 public class App {
     public static void main(String[] args){
-        
+        //varai
+        Scanner input = new Scanner(System.in);
+
+        //inputs
+        System.out.print("What is the quote? ");
+        String quote = input.nextLine();
+        System.out.print("Who said it? ");
+        String name = input.nextLine();
+
+        //Concatenation
+        String output = (name + " says, \"" + quote + "\"");
+
+        //output
+        System.out.println(output);
     }
 }
